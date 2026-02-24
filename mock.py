@@ -37,8 +37,6 @@ def is_fibonacci(n):
     pass
 
 
-
-
 # Question 4
 def deep_flatten(lst):
     flats = []
@@ -55,8 +53,10 @@ print(deep_flatten([1, [2, [3, 4], 5], 6]))
 def pyramid_pattern(s):
     string=''
     for i in range(len(s)):
-        for x in range(i):
+        for x in range(i+1):
             print(s[x], end='') # WHY THE FUCK ISNT IT WORKINGF
+
+        print() # forgot new line
 
     
 from collections import Counter
